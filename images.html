@@ -1,0 +1,30 @@
+<html>
+    <body>
+      
+      <div id="image-container">
+        <!-- Image container where the images will be displayed -->
+      </div>
+       
+    </body>
+</html>
+
+
+<script>
+  // JavaScript Code
+
+  // Array of image URLs
+  var imageURLs = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
+
+  // Get the image container element
+  var container = document.getElementById('image-container');
+
+  // Iterate over the array of image URLs
+  for (var i = 0; i < imageURLs.length; i++) {
+    // Create a new image element
+    var img = document.createElement('img');
+    // Set the source of the image to the current URL in the array
+    img.src = imageURLs[i];
+    // Append the image to the container element
+    container.appendChild(img);
+  }
+</script>
